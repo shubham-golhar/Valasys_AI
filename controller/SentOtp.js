@@ -33,7 +33,6 @@ const generateOtp = asyncHandler(async (req, res) => {
       { _id: getUser._id },
       { $set: jsonData }
     );
-    console.log("saveOtp", saveOtp);
 
     if (saveOtp) {
       // Send the OTP via email
